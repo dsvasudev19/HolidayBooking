@@ -16,7 +16,7 @@ const root = ReactDOM.createRoot(
 );
 
 export const axiosInstance = axios.create({
-  baseURL: "https://www.solitary.spackdigi.com/v1",
+  baseURL: "http://localhost:3000/v1",
   withCredentials: true,
 });
 
