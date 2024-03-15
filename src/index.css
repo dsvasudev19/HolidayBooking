@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer base {
+  [type="text"],
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    @apply bg-white dark:bg-brown border-neutral-200 dark:bg-brown rounded-full focus:bg-brown 
+    focus:bg-brown block w-full sm:text-sm text-neutral-900 dark:text-neutral-200;
+  }
+}
+
+
