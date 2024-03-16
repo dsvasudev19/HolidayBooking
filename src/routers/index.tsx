@@ -333,6 +333,7 @@ export const pages: Page[] = [
   { path: "/forgot", component: Forgot },
   {path:"/reset-password/:token",component:ResetPassword},
   {path:"/ResetPassword/:token",component:ResetPassword},
+  {path:"/ResetPassword",component:ResetPassword},
   { path: "/login", component: PageLogin },
   { path: "/subscription", component: PageSubcription },
   //

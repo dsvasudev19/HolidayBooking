@@ -37,9 +37,18 @@ const ResetPassword: FC<PageLoginProps> = ({ className = "" }) => {
     password: "",
     confirmPassword: "",
   });
+  const [token, setToken] = useState("");
 
-  const { token } = useParams();
-  console.log(token);
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    console.log(urlParams);
+    const tokenParam = urlParams.get("token");
+    if (tokenParam) {
+      setToken(tokenParam);
+    }
+  }, []);
+
+
   const navigate = useNavigate();
 
   const formik = useFormik({
@@ -93,6 +102,7 @@ const ResetPassword: FC<PageLoginProps> = ({ className = "" }) => {
       validateToken();
     }
   }, [token]);
+
   return (
     <div className={`nc-PageLogin ${className}`} data-nc-id="PageLogin">
       <Helmet>

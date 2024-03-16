@@ -158,6 +158,7 @@ export interface LocationStates {
   "/signup"?: {};
   "/reset-password/:token"?: {};
   "/ResetPassword/:token"?: {};
+  "/ResetPassword"?: {};
 
   "/forgot"?: {};
   "/page404"?: {};
